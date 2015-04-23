@@ -1,0 +1,320 @@
+body{
+	font: 14px 'Open-Sans', Arial, Sans-serif;
+	color:#82868c;
+}
+a{
+	text-decoration: none;
+	cursor: pointer;
+	color: #d7dee4;
+	transition: border-color .5s ease-in-out, color .5s ease-in-out;
+	-moz-transition: border-color .5s ease-in-out, color .5s ease-in-out;
+	-webkit-transition: border-color .5s ease-in-out, color .5s ease-in-out;
+}
+a:hover{
+	color: #0ebfdd;
+}
+img{
+	display:block;
+	width: 100%;
+}
+.image-rounded{
+	border-radius: 50%;
+	margin-bottom: 10px;
+}
+.ba-container{
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+}
+.main-header{
+	width: 100%;
+	height: 80px;
+	font-weight: 700;
+	background-color: #f7fdfe;
+}
+.main-header h1{
+	position:absolute;
+	top: 28px;
+	left: 10px;
+	line-height: 22px;
+	font-size: 30px;
+}
+.main-header nav{
+	position: absolute;
+	top: 32px;
+	right: 160px;
+}
+.main-header nav li{
+	display: inline-block;
+	margin-right: 35px;
+	text-transform: uppercase;
+}
+.main-header nav li:last-child{
+	margin-right: 0;
+}
+.main-header nav li a{
+	color: #82868c;
+}
+.main-header nav li a:hover{
+	color: #0ebfdd;
+}
+.ba-button,
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"]{
+	position: absolute;
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 700;
+	background-color: #0ebfdd;
+	color: #f7fdfe;
+	padding: 12px 36px;
+	border-radius:20px;
+
+	transition: background-color .5s ease-in-out, color .5s ease-in-out;
+	-moz-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+	-webkit-transition: background-color .5s ease-in-out, color .5s ease-in-out;
+}
+.ba-button:hover,
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover{
+	background-color: #67cdde; 
+	color: #82868c;
+}
+.ba-button-h{
+	top: 20px;
+	right: 10px;
+}
+.ba-row{
+	padding:66px 0 69px;
+}
+.description h1,
+.description p{
+	color: #45494d;
+}
+.description h1{
+	font-size: 44px;
+	line-height: 32px;
+	font-weight: 700;
+	margin-bottom: 23px;
+}
+.description p{
+	font-size: 20px;
+	line-height: 1.5;
+}
+/*section Mission*/
+.mission{
+	background:url(../img/bg-1.jpg) no-repeat;
+	background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+}
+.mission .ba-row{
+	padding: 404px 0 83px;
+}
+.mission h1,
+.mission span,
+.mission p{
+	color:#f7fdfe;
+}
+.mission span{
+	font-size: 12px;
+	line-height:12px;
+	vertical-align: middle;
+}
+/*section About*/
+.about{
+	background-color: #fff;
+}
+.about h1{
+	color: #0ebfdd;
+}
+/*section team*/
+.team{
+	background-color: #0ebfdd;
+}
+.team .ba-row{
+	padding: 58px 0 64px;
+}
+.team h1{
+	color: #fff;
+	margin-bottom: 105px;
+}
+.team .ba-container{
+	width:620px;
+}
+.team .ba-grid{
+	margin-left: 0px;
+}
+.team .ba-grid>[class*="ba-width"]{
+	padding-left: 0;
+	margin-left: 11.3%;
+	width: 24.2%;
+}
+.team .ba-grid .ba-width-1-3:first-child{
+	margin-left: 2.3%;
+}
+.team .ba-grid .ba-width-1-3:last-child{
+	margin-right: 2.3%;
+}
+.caption h4,
+.caption p{
+	color: #f7fdfe;
+}
+.caption h4{
+	font-size: 20px;
+	font-weight: 400;
+}
+.caption p{
+	font-style: italic;
+	font-size: 14px;
+	font-weight: 300;
+}
+.team .ba-button{
+	position:relative;
+	border: 1px solid #f7fdfe;
+	margin: 100px auto 0;
+}
+/*section map*/
+.map{
+	position: relative;
+	background:url(../img/map.jpg) no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	height: 600px;
+}
+.mark{
+	position: absolute;
+	cursor: pointer;
+}
+.map .mark-1{
+	left: 386px;
+	top: 286px;
+}
+.map .mark-2{
+	left: 723px;
+	top: 160px;
+}
+.map .mark-3{
+	left: 518px;
+	bottom: 118px;
+}
+.mark::before,
+.mark::after{
+	display: block;
+	position: absolute;
+	visibility: hidden;
+	opacity: 0;
+
+	transition: opacity .7s;
+	-moz-transition: opacity .7s;
+	-webkit-transition: opacity .7s;
+}
+.mark::after{
+	content: "";
+	border-top: 5px solid #45494d;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	margin-bottom: 20px;
+	top: -14px;
+}
+.mark::before{
+	content: "Company.com xyz Street London, UK 13214";
+	padding: 10px;
+	width: 168px;
+	height: 76px;
+	top:-90px;
+	left:-10px;
+	margin-bottom: 20px;
+	color:#fff;
+	background-color: #45494d;
+	text-align: center;
+	font-size: 16px;
+}
+.mark:hover::before{
+	opacity: 1;
+	visibility: visible;
+}
+.mark:hover::after{
+	opacity: 1;
+	visibility: visible;
+}
+/*fooooooter*/
+footer{
+	background-color: #45494d;
+}
+footer .container{
+	padding:10px;
+}
+.footer-top{
+	display: block;
+	height: 80px;
+	border-bottom: 1px solid #5a5e62;
+}
+.contacts{
+	display:inline-block;
+	font-size: 12px;
+	padding-top: 36px;
+	font-weight: 500;
+}
+.contacts li{
+	display: inline-block;
+	padding-right: 33px;
+}
+.contacts li:last-child{
+	padding-right: 0;
+}
+.icons{
+	float: right;
+	vertical-align: middle;
+	padding-top: 20px;
+}
+.icons li{
+	display: inline-block;
+	font-size: 18px;
+	margin-left: 10px;
+}
+.icons li a{
+	display: block;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 50%;
+	border: 1px solid #d7dee4;
+	text-align: center;
+}
+.icons li a:hover{
+	border-color: #0ebfdd;
+	color: #0ebfdd;
+}
+.footer-bottom{
+	height: 40px;
+}
+.copyright{
+	float: right;
+}
+.copyright a{
+	font-size: 14px;
+	line-height: 14px;
+	font-weight: 500;
+	display: inline-block;
+	color: #73767a;
+	padding: 0 15px;
+	margin-top: 15px;
+	border-right: 1px solid #73767a;
+}
+.copyright a:last-child{
+	border-right: 0;
+	padding-right: 0;
+}
+.copyright a:hover{
+	color:#fff;
+}

@@ -108,7 +108,7 @@
 	clear: both;
 }
 .ba-grid{
-	 *zoom: 1;
+	*zoom: 1;
 }
 .ba-grid>[class*="ba-width"]{
 	float: left;
